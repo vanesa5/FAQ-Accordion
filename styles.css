@@ -46,8 +46,11 @@ h2 {
     font-size: 1.15rem;
     margin: 25px 0;
     width: 90%;
+}
 
-
+h2:hover {
+    color: #b737f4;
+    opacity: 1;
 }
 
 p{
@@ -67,7 +70,7 @@ svg {
 
 
 .faqs {
-    border-top: 2px solid blue;
+    border-top: 2px solid #c9c6ca;
 
 }
 
@@ -78,3 +81,10 @@ svg {
 /* attributes */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* ==========================================================================
+    Tablet
+========================================================================== */
+
+@media only screen and (min-width: 768px) {
+/*Tablet Styles here*/
