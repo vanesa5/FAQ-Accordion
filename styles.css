@@ -1,6 +1,14 @@
+/**locks horizontal scroll**/
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
-    max-width: 375px;
+    /**replaced with code below to prevent overflow**max-width: 375px;**/
+    font-family: "Raleway", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: #f9eeff;
     display: flex;
     justify-content: center;
@@ -14,22 +22,31 @@ body {
 
 }
 
+path {
+    width: 100%;
+    height: auto;
+}
+
 .background-header {
     height: 230px;
     width: 400px;
     display: flex;
-    
 }
 
 .card {
     background-color: white;
     border-radius: 15px;
-    width: 300px;
-    height: 525px;
-    padding: 25px;
+    width: 275px;
+    /**width: 300px;**/
+    /**height: 525px;**/
+    height: 450px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
     display: flex;
     margin-top: -80px;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -37,6 +54,7 @@ header {
 }
 
 h1{
+    font-family: "Raleway", sans-serif;
     font-size: 2rem;
     padding-left: 25px;
     margin: 0px;
@@ -55,6 +73,7 @@ h2:hover {
 
 p{
     font: .8rem;
+    padding-top: none;
 }
 
 svg {
@@ -83,8 +102,13 @@ svg {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* ==========================================================================
-    Tablet
+    Desktop
 ========================================================================== */
 
-@media only screen and (min-width: 768px) {
-/*Tablet Styles here*/
+@media only screen and (min-width: 1200px) {
+/*Desktop Styles here*/
+
+
+}
+/*need to make modal responsive*/
+/*need to change font*/
