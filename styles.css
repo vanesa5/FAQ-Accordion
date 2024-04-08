@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    /**replaced with code below to prevent overflow**max-width: 375px;**/
     font-family: "Raleway", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
@@ -14,7 +13,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
-    
 }
 
 .background-top {
@@ -45,6 +43,7 @@ path {
     padding-left: 25px;
     display: flex;
     margin-top: -80px;
+    overflow: visible;
 }
 
 header {
@@ -73,7 +72,10 @@ h2:hover {
 
 p{
     font: .8rem;
-    padding-top: none;
+}
+
+#answer {
+    margin-top: none;
 }
 
 svg {
@@ -85,8 +87,6 @@ svg {
     display: flex;
     align-items: center;
 }
-
-
 
 .faqs {
     border-top: 2px solid #c9c6ca;
@@ -108,7 +108,36 @@ svg {
 @media only screen and (min-width: 1200px) {
 /*Desktop Styles here*/
 
+.background-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.background-header {
+    width: 100%;
+    height: 300px;
+    /**should this be auto**/
+}
+
+path {
+    width: 1200px;
+}
+
+.card {
+    width: 475px;
+    justify-content: center;
+}
+
+body {
+    flex-wrap: wrap;
+}
+
+.attribution {
+    width: 100%;
+}
 
 }
 /*need to make modal responsive*/
-/*need to change font*/
+/*remove top margin from p #answer*/
