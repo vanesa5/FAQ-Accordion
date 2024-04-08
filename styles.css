@@ -1,6 +1,6 @@
 
 body {
-    max-width: 375px;
+    max-width: 767px;
     background-color: #f9eeff;
     display: flex;
     justify-content: center;
@@ -11,6 +11,9 @@ body {
 
 .background-top {
     width: 400px;
+    display: flex;
+
+
 
 }
 
