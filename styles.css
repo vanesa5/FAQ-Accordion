@@ -31,7 +31,6 @@ body {
 
 .background-header {
     height: 230px;
-    width: 400px;
     display: flex;
 }
 
@@ -75,11 +74,13 @@ h2:hover {
 }
 
 p{
-    font: .8rem;
+    font-size: .8rem;
+    color: #876f92;
 }
 
 #answer {
-    margin-top: none;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 svg {
@@ -106,6 +107,7 @@ svg {
     font-size: 11px; 
     text-align: center; 
     width: 100%;
+    margin-top: 20px;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
