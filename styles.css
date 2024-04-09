@@ -1,6 +1,6 @@
 /**locks horizontal scroll**/
 html {
-    max-width: 100%;
+    max-width: 767;
     overflow-x: hidden;
 }
 
@@ -16,21 +16,21 @@ body {
 }
 
 .background-top {
-    width: 400px;
-    display: flex;
-
-
-
-}
-
-path {
     width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+
+
 }
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .background-header {
     height: 230px;
-    width: 400px;
     display: flex;
 }
 
@@ -40,7 +40,7 @@ path {
     width: 275px;
     /**width: 300px;**/
     /**height: 525px;**/
-    height: 450px;
+    height: max-content;
     padding-top: 25px;
     padding-right: 25px;
     padding-left: 25px;
@@ -74,11 +74,13 @@ h2:hover {
 }
 
 p{
-    font: .8rem;
+    font-size: .8rem;
+    color: #876f92;
 }
 
 #answer {
-    margin-top: none;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 svg {
@@ -101,7 +103,12 @@ svg {
 }
 
 /* attributes */
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    width: 100%;
+    margin-top: 20px;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* ==========================================================================
