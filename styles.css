@@ -1,35 +1,54 @@
+/**locks horizontal scroll**/
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
-    max-width: 375px;
+    font-family: "Raleway", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: #f9eeff;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
-    
 }
 
 .background-top {
     width: 400px;
+    display: flex;
 
+
+
+}
+
+path {
+    width: 100%;
+    height: auto;
 }
 
 .background-header {
     height: 230px;
     width: 400px;
     display: flex;
-    
 }
 
 .card {
     background-color: white;
     border-radius: 15px;
-    width: 300px;
-    height: 525px;
-    padding: 25px;
+    width: 275px;
+    /**width: 300px;**/
+    /**height: 525px;**/
+    height: 450px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
     display: flex;
     margin-top: -80px;
+    overflow: visible;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -37,6 +56,7 @@ header {
 }
 
 h1{
+    font-family: "Raleway", sans-serif;
     font-size: 2rem;
     padding-left: 25px;
     margin: 0px;
@@ -46,12 +66,19 @@ h2 {
     font-size: 1.15rem;
     margin: 25px 0;
     width: 90%;
+}
 
-
+h2:hover {
+    color: #b737f4;
+    opacity: 1;
 }
 
 p{
     font: .8rem;
+}
+
+#answer {
+    margin-top: none;
 }
 
 svg {
@@ -64,10 +91,8 @@ svg {
     align-items: center;
 }
 
-
-
 .faqs {
-    border-top: 2px solid blue;
+    border-top: 2px solid #c9c6ca;
 
 }
 
@@ -78,3 +103,44 @@ svg {
 /* attributes */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* ==========================================================================
+    Desktop
+========================================================================== */
+
+@media only screen and (min-width: 1200px) {
+/*Desktop Styles here*/
+
+.background-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.background-header {
+    width: 100%;
+    height: 300px;
+    /**should this be auto**/
+}
+
+path {
+    width: 1200px;
+}
+
+.card {
+    width: 475px;
+    justify-content: center;
+}
+
+body {
+    flex-wrap: wrap;
+}
+
+.attribution {
+    width: 100%;
+}
+
+}
+/*need to make modal responsive*/
+/*remove top margin from p #answer*/
